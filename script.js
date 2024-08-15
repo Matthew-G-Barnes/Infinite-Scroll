@@ -10,7 +10,7 @@ let photosArray = [];
 // Unsplash API
 const initialCount = 5;
 const standardCount = 30;
-const apiKey = '5ERdzsMSeG2OvNFGpXWoeONxUIZX3rNX9wk90Fti1RI';
+const apiKey = process.env.API_KEY;
 let apiUrl = '';
 
 // Check if all images were loaded
