@@ -10,8 +10,15 @@ let photosArray = [];
 // Unsplash API
 const initialCount = 5;
 const standardCount = 30;
-const apiKey = process.env.API_KEY;
+const apiKey = '5ERdzsMSeG2OvNFGpXWoeONxUIZX3rNX9wk90Fti1RI';
 let apiUrl = '';
+
+if (!apiKey) {
+    console.error('API Key is missing!');
+    process.exit(1);
+  }
+  
+  console.log(`Your API Key is: ${apiKey}`);
 
 // Check if all images were loaded
 function imageLoaded() {
